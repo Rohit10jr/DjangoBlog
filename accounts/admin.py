@@ -40,9 +40,6 @@ class BlogUserChangeForm(UserChangeForm):
         fields = '__all__'
         field_classes = {'username': UsernameField}
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
 
 class BlogUserAdmin(UserAdmin):
     form = BlogUserChangeForm
